@@ -11,26 +11,30 @@ project 1 - A Random Quote Generator
 ***/
 
 let quotes = [
-  {quote1: "Failure isn't fatal, but failure to change might be.",
-  source1: "John Wooden",
-  citation1: "30 Powerful Quotes on Failure: Forbes",
-  year1: "December 2013" 
+  {quote: "Failure isn't fatal, but failure to change might be.",
+  source: "John Wooden",
+  citation: "30 Powerful Quotes on Failure: Forbes",
+  year: "December 2013" 
   },
-  {quote2: "Only those who dare to fail greatly can ever achieve greatly.",
-  source2: "Robert F. Kennedy",
-  citation2: "30 Powerful Quotes on Failure: Forbes",
-  year2: "" 
+  {quote: "Only those who dare to fail greatly can ever achieve greatly.",
+  source: "Robert F. Kennedy",
+  citation: "30 Powerful Quotes on Failure: Forbes",
+  year: false 
   },
-  {quote3: "If you don’t try at anything, you can’t fail… it takes back bone to lead the life you want.",
-  source3: "Richard Yates",
-  citation3: "30 Powerful Quotes on Failure: Forbes",
+  {quote: "If you don’t try at anything, you can’t fail… it takes back bone to lead the life you want.",
+  source: "Richard Yates",
+  citation: "30 Powerful Quotes on Failure: Forbes",
+  year: false 
   },
-  {quote4: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-  source4: "Winston Churchill",
-  citation4: "30 Powerful Quotes on Failure: Forbes",
+  {quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+  source: "Winston Churchill",
+  citation: "30 Powerful Quotes on Failure: Forbes",
+  year: false 
   },
-  {quote5: "The master has failed more times than the beginner has tried.",
-  source5: "Stephen McCranie",
+  {quote: "The master has failed more times than the beginner has tried.",
+  source: "Stephen McCranie",
+  citation: false,
+  year: false 
   }
 ];
 
@@ -38,6 +42,20 @@ let quotes = [
 function getRandomQuote(quotes) {
   return quotes = [Math.floor(Math.random() * quotes.length)];
 }
+
+function printQuote(getRandomQuote) {
+  for (var i = 0; i < quotes.length; i += 1){
+    quote = quotes[i].quote;
+    source = quotes[i].source;
+    citation = quotes[i].citation;
+    year = quotes[i].year;
+  }
+  return(quotes);
+}
+
+
+//let quoteHtml = "Your Html code"
+
 
 /***
   Create the `printQuote` function to: 
@@ -52,13 +70,22 @@ function getRandomQuote(quotes) {
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-function printQuote(getRandomQuote){
+// function printQuote(getRandomQuote){
+//   let randomQuote = getRandomQuote;
+
+//   quote_view = '<p class = "quote">' + randomQuote.quote + '</p>';
+//   quote_view += '<p class="source">' + randomQuote.source;
 
 
-}
+//   //If there is a quote.citation property, add it to the string
+//   if (randomQuote.citation !== undefined && randomQuote.year !== undefined) {
+//     quote_view += '<span class="citation">' + randomQuote.citation + '</span>'; 
+//     quote_view += '<span class="year">' + randomQuote.year + '</span>' + '</p>';
 
-
-
+// }
+// quote_view += '<h4>' + randomQuote.tags + '</h4>';
+// print(quote_view)
+// }
 /***
   When the "Show another quote" button is clicked, the event listener 
   below will be triggered, and it will call, or "invoke", the `printQuote` 
