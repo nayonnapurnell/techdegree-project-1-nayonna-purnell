@@ -3,7 +3,7 @@
 
 ### Software Developer: Nayonna Purnell
 
-This project is a random quote generator, which displays quotations on a page, and can be controlled by the user. 
+This project is a random quote generator, which displays quotations on a page.  Each quotation can be viewed by the user clicking th button. 
 
 This build is my first JavaScript application for this Treehouse Techdegree.
 
