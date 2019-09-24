@@ -1,14 +1,12 @@
 /******************************************
 Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
+Software Developer: Nayonna Purnell
 ******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
 
 
-/*** 
-  Array of 5 quote objects.
-***/
+//The array of 5 quote objects.
 
 let quotes = [
   {quote: "Failure isn't fatal, but failure to change might be.",
@@ -38,20 +36,30 @@ let quotes = [
   }
 ];
 
-//getRandomQuote function randomly passes in the quotes objects
+//getRandomQuote function passes in the quotes objects to return a randomQuote
 function getRandomQuote(quotes) {
-  return quotes = [Math.floor(Math.random() * quotes.length)];
+  let randomQuote = [Math.floor(Math.random() * quotes.length)];
+  for (var i = 0; i < quotes.length; i += 1){
+
+  }
+
+  return randomQuote;
 }
 
+
 function printQuote(getRandomQuote) {
-  for (var i = 0; i < quotes.length; i += 1){
-    quote = quotes[i].quote;
-    source = quotes[i].source;
-    citation = quotes[i].citation;
-    year = quotes[i].year;
+  
+    let quote = quotes[i].quote;
+    let source = quotes[i].source;
+    let citation = quotes[i].citation;
+    let year = quotes[i].year;
+
+    
+
   }
-  return(quotes);
-}
+  
+  
+
 
 
 //let quoteHtml = "Your Html code"
@@ -93,7 +101,7 @@ function printQuote(getRandomQuote) {
   comment.
 ***/
 
-document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
