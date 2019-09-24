@@ -7,6 +7,6 @@ This project is a random quote generator, which displays quotations on a page, a
 
 This build is my first JavaScript application for this Treehouse Techdegree.
 
-*Step 1) Create an array of 5 Quote Objects.
-*Step 2) Create the getRandomQuote function that passes in the quotes object to return a randomQuote.
-*Step 3)Create the printQuote function so that when a user presses the Get quote button, a new quote appears on the screen.
+*Step 1 Create an array of 5 Quote Objects.
+*Step 2 Create the getRandomQuote function that passes in the quotes object to return a randomQuote.
+*Step 3 Create the printQuote function so that when a user presses the Get quote button, a new quote appears on the screen.
