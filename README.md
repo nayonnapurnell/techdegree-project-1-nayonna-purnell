@@ -1,7 +1,7 @@
-# techdegree-project-1-nayonna-purnell
-The Random Quote Generator Project
+## techdegree-project-1-nayonna-purnell
+# The Random Quote Generator Project
 
-Software Developer: Nayonna Purnell
+### Software Developer: Nayonna Purnell
 
 This project is a random quote generator, which displays quotations on a page, and can be controlled by the user. 
 
