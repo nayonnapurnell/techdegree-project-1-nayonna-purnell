@@ -38,22 +38,20 @@ let quotes = [
 
 //getRandomQuote function passes in the quotes objects to return a randomQuote
 function getRandomQuote(quotes) {
-  let randomQuote = [Math.floor(Math.random() * quotes.length)];
-  for (var i = 0; i < quotes.length; i += 1){
-
-  }
-
+  let randomQuote = [Math.floor(Math.random() * quotes.length)]; 
   return randomQuote;
 }
 
+ 
 
+//https://teamtreehouse.com/library/accessing-object-properties
 function printQuote(getRandomQuote) {
-  
     let quote = quotes[i].quote;
     let source = quotes[i].source;
     let citation = quotes[i].citation;
     let year = quotes[i].year;
-
+  
+    const quoteHtml =
     
 
   }
@@ -101,7 +99,7 @@ function printQuote(getRandomQuote) {
   comment.
 ***/
 
-//document.getElementById('loadQuote').addEventListener("click", printQuote, false);
+document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
