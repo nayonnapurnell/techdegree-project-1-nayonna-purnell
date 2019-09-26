@@ -8,7 +8,7 @@ Software Developer: Nayonna Purnell
 
 //The array of 5 quote objects.
 
-let quotes = [
+const quotes = [
   {quote: "Failure isn't fatal, but failure to change might be.",
   source: "John Wooden",
   citation: "30 Powerful Quotes on Failure: Forbes",
@@ -38,11 +38,9 @@ let quotes = [
 
 //getRandomQuote function passes in the quotes objects to return a randomQuote
 function getRandomQuote(quotes) {
-  let randomQuote = [Math.floor(Math.random() * quotes.length)]; 
-  return randomQuote;
+  let randomQuote = Math.floor(Math.random() * (quotes.length)); 
+  return quotes[randomQuote];
 }
-
- 
 
 //https://teamtreehouse.com/library/accessing-object-properties
 function printQuote(getRandomQuote) {
