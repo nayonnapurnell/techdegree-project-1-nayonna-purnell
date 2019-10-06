@@ -43,13 +43,10 @@ function getRandomQuote(quotes) {
 }
 
 //https://teamtreehouse.com/library/accessing-object-properties
-function printQuote(getRandomQuote) {
-    let quote = quotes[i].quote;
-    let source = quotes[i].source;
-    let citation = quotes[i].citation;
-    let year = quotes[i].year;
-  
-    const quoteHtml =
+function printQuote( ) {
+    
+    let  storedRandomQuote = getRandomQuote ();
+    let quoteHtml = document.getElementById('quote-box');
     
 
   }
