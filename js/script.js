@@ -45,17 +45,41 @@ function getRandomQuote(quotes) {
 //https://teamtreehouse.com/library/accessing-object-properties
 function printQuote( ) {
     
-    let  storedRandomQuote = getRandomQuote ();
-    let quoteHtml = document.getElementById('quote-box');
+    let  storedRandomQuote = getRandomQuote(quotes);
+    let quoteHtml = '';
     
+    document.getElementById('quote-box');
+
+/***
+  Create the `printQuote` function to: 
+   - Call the `getRandomQuote` function and assign it to a variable.
+   - Create a variable for the HTML string and set it equal to an empty string.
+   - Use the HTML template in the instructions or the markup in the index.html file, AND 
+     the random quote variable to build your HTML string.
+   - Add the quote and source section to the HTML string.
+   - Use an if statement to check for the citation property before adding it to the HTML string.
+   - Use an if statement to check for the year property before adding it to the HTML string.
+   - Don't forget to close that final `p` tag.
+   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
+***/
+
+    //If there is a quote.citation property, add it to the string
+  if (storedRandomQuote = quotes.citation ) {
+    return 
+  }
+  else if (x = y) {
 
   }
+  return 
+ }
+    
+
   
   
+  
 
 
 
-//let quoteHtml = "Your Html code"
 
 
 /***
@@ -71,22 +95,9 @@ function printQuote( ) {
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
 
-// function printQuote(getRandomQuote){
-//   let randomQuote = getRandomQuote;
-
-//   quote_view = '<p class = "quote">' + randomQuote.quote + '</p>';
-//   quote_view += '<p class="source">' + randomQuote.source;
 
 
-//   //If there is a quote.citation property, add it to the string
-//   if (randomQuote.citation !== undefined && randomQuote.year !== undefined) {
-//     quote_view += '<span class="citation">' + randomQuote.citation + '</span>'; 
-//     quote_view += '<span class="year">' + randomQuote.year + '</span>' + '</p>';
 
-// }
-// quote_view += '<h4>' + randomQuote.tags + '</h4>';
-// print(quote_view)
-// }
 /***
   When the "Show another quote" button is clicked, the event listener 
   below will be triggered, and it will call, or "invoke", the `printQuote` 
