@@ -37,66 +37,42 @@ const quotes = [
 ];
 
 //getRandomQuote function passes in the quotes objects to return a randomQuote
-function getRandomQuote(quotes) {
+function getRandomQuote() {
   let randomQuote = Math.floor(Math.random() * (quotes.length)); 
   return quotes[randomQuote];
 }
 
 //https://teamtreehouse.com/library/accessing-object-properties
 function printQuote( ) {
-    
-    let  storedRandomQuote = getRandomQuote(quotes);
-    let quoteHtml = '';
-    
-    document.getElementById('quote-box');
+  
+  //Create a variable that calls the `getRandomQuote` function.
+  let storedRandomQuote = getRandomQuote();
 
-/***
-  Create the `printQuote` function to: 
-   - Call the `getRandomQuote` function and assign it to a variable.
-   - Create a variable for the HTML string and set it equal to an empty string.
-   - Use the HTML template in the instructions or the markup in the index.html file, AND 
-     the random quote variable to build your HTML string.
-   - Add the quote and source section to the HTML string.
-   - Use an if statement to check for the citation property before adding it to the HTML string.
-   - Use an if statement to check for the year property before adding it to the HTML string.
-   - Don't forget to close that final `p` tag.
-   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
-***/
+  //Create a variable for the HTML string and set it equal to an empty string.
+    let quoteHtml = ''; 
 
-    //If there is a quote.citation property, add it to the string
-  if (storedRandomQuote = quotes.citation ) {
-    return 
-  }
-  else if (x = y) {
+ //Add the quote and source section to the HTML string.
+    quoteHtml +=  '<p class="quote">' + storedRandomQuote.quote + '</p>';
+    quoteHtml += '<p class="source">' + storedRandomQuote.source;
 
-  }
-  return 
- }
+//The if statement used to check for the citation property before adding it to the HTML string.
+if (storedRandomQuote.citation) {
+    quoteHtml += '<span class="citation">' + storedRandomQuote.citation +'</span>';
+}
+if (storedRandomQuote.year) {
+    quoteHtml += '<span class="year">' + storedRandomQuote.year +'</span>';
+}
+quoteHtml += '</p>';
+
+let HTML = document.getElementById("quote-box");
+HTML.innerHTML = quoteHtml;
+
+}
+
     
 
-  
-  
-  
-
-
-
-
-
-/***
-  Create the `printQuote` function to: 
-   - Call the `getRandomQuote` function and assign it to a variable.
-   - Create a variable for the HTML string and set it equal to an empty string.
-   - Use the HTML template in the instructions or the markup in the index.html file, AND 
-     the random quote vairable to build your HTML string.
-   - Add the quote and source section to the HTML string.
-   - Use an if statement to check for the citation property before adding it to the HTML string.
-   - Use an if statement to check for the year property before adding it to the HTML string.
-   - Don't forget to close that final `p` tag.
-   - Set the `innerHTML` of the `quote-box` div to the HTML string. 
-***/
-
-
-
+   
+    
 
 /***
   When the "Show another quote" button is clicked, the event listener 
@@ -107,5 +83,3 @@ function printQuote( ) {
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
